@@ -2,9 +2,25 @@
 
 * {
   margin: 0;
-  padding: 0;
+  padding: 2px;
 }
 
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
 /* navbar */
 
 .navbar {
@@ -206,6 +222,10 @@ padding: 0px;
 
 #resumeContainer {
   background-color: #4b4c4d;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
 }
 
  /*Contact section*/
